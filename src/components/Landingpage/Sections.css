@@ -1,0 +1,365 @@
+.landingpage-section {
+    width: 93.7%;
+    height: 1306px;
+    float: right;
+}
+.section-h2 {
+    font-size: 52px;
+    line-height: 65px;
+    font-weight: 800;
+    font-family: "GothamBlack";
+    padding-top: 200px;
+}
+@media only screen and (max-width: 1355px) {
+    .landingpage-section {
+        width: 100%;
+        height: auto;
+        clear: both;
+    }
+    .section-h2 {
+        font-size: 30px;
+        line-height: 1.5;
+        padding-top: 50px;
+    }
+}
+
+/* Adds the scroll animation */
+.reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Header section */
+#header-section {
+    background-color: #2a2a2c;
+    color: #ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+#header-section > p {
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-family: "GothamBold";
+    text-align: left;
+    margin: 0;
+    padding-left: 120px;
+    padding-top: 85px;
+}
+#header-section-body {
+    margin-top: -75px;
+}
+#header-section-body .svg-container {
+    height: auto;
+    width: 600px;
+    margin: auto;
+}
+#header-section-body img {
+    -webkit-filter: invert(100%);
+            filter: invert(100%); 
+    width: 100%;
+    height: auto;
+}
+#header-section-text {
+    margin-top: -40px;
+}
+#header-section-text h1 {
+    font-size: 90px;
+    font-family: "GothamBlack";
+    font-weight: 800;
+    letter-spacing: -2px;
+    display: inline;
+}
+#header-section-text h2 {
+    font-size: 40px;
+    line-height: 27px;
+}
+#header-section-text article p {
+    font-size: 32px;
+    line-height: 45px;
+    margin: 90px auto 0;
+    width: 65%;
+}
+#header-section-interactive {
+    height: 56px;
+    width: 224px;
+    margin: auto;
+    position: relative;
+    bottom: -70px;
+}
+#header-section-interactive a {
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "GothamBlack";
+    text-decoration: none;
+    padding-top: 167px;
+    cursor: pointer;
+}
+#header-section-interactive a p {
+    margin-bottom: 15px;
+}
+#header-section-interactive .dot {
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: block;
+    margin: 8px auto;
+}
+#header-section-interactive .dot:nth-of-type(1) {
+    height: 4px;
+    width: 4px;
+}
+#header-section-interactive .dot:nth-of-type(2) {
+    height: 5px;
+    width: 5px;
+}
+#header-section-interactive .dot:nth-of-type(3) {
+    height: 6px;
+    width: 6px;
+}
+
+@media only screen and (max-width: 1355px) {
+    #header-section {
+       padding: 0 20px;
+       margin-top: 80px;
+    }
+    #header-section > p {
+        font-size: 16px;
+        text-align: left;
+        margin: 0;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    #header-section-body .svg-container {
+        margin-top: 50px;
+        width: 300px;
+    }
+    #header-section-text h1 {
+        font-size: 40px;
+    }
+    #header-section-text h2 {
+        font-size: 24px;
+    }
+    #header-section-text article p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-top: 40px;
+    }
+    #header-section-interactive {
+        height: auto;
+        bottom: 5px;
+        margin-top: 50px;
+    }
+    #header-section-interactive a {
+        font-size: 18px;
+    }
+}
+
+/* Main section */
+#main-section {
+    background-color: #ffffff;
+    color: #2a2a2c;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+#main-section-body {
+    width: 100%;
+    margin-top: 150px;
+}
+#main-section-body article {
+    float: left;
+    width: 400px;
+    margin-left: 18%;
+}
+#main-section-body h3 {
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: "GothamBold";
+}
+#main-section-body p {
+    font-size: 28px;
+    line-height: 40px;
+}
+
+@media only screen and (max-width: 1355px) {
+    #main-section {
+        width: 60%;
+        padding-bottom: 50px;
+    }
+    #main-section .reveal {
+        padding: 0 20px;
+    }
+    #main-section-body {
+        margin-top: 0px;
+    }
+    #main-section-body article {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    #main-section-body h3 {
+        font-size: 24px;
+        line-height: 1.5;
+        margin: 0;
+    }
+    #main-section-body p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+
+/* Footer section */
+#footer-section {
+    background-color: #eb5b51;
+    color: #ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+#footer-section p {
+    font-size: 32px;
+    line-height: 35px;
+    margin-top: -25px;
+}
+#call-me-form {
+    width: 60%;
+    margin: 150px auto 0;
+}
+#call-me-form fieldset {
+    border: none;
+}
+#call-me-form legend {
+    /*  Visually hides it  */
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0); /* Clip is deprecated and will most likely be replace by clip-path */
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+}
+#call-me-form input {
+    float: left;
+    background-color: #eb5b51;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    width: 45%;
+    height: 70px;
+    font-size: 27px;
+    color: #ffffff;
+    margin-left: 3.6%;
+    margin-top: 2%;
+}
+#call-me-form input[name="name"] {
+    width: 94%;
+}
+#call-me-form input:focus {
+    outline: none;
+}
+#call-me-form input::placeholder {
+    color: #ffffff;
+    opacity: 0.502;
+    font-size: 27px;
+    line-height: 60px;
+}
+#call-me-form input::-webkit-input-placeholder {
+    /* Needed for older browsers */
+    color: #ffffff;
+    opacity: 0.502;
+    font-size: 27px;
+    line-height: 60px;
+}
+#call-me-form input::-moz-placeholder {
+    /* Needed for older Firefox browsers */
+    color: #ffffff;
+    opacity: 0.502;
+    font-size: 27px;
+    line-height: 60px;
+}
+#call-me-form input:-webkit-autofill,
+#call-me-form input:-webkit-autofill:hover, 
+#call-me-form input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #ffffff;
+    -webkit-box-shadow: 0 0 0px 40rem #eb5b51 inset;
+}
+#call-me-form button {
+    width: 400px;
+    height: 120px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    font-size: 32px;
+    line-height: 35px;
+    color: #eb5b51;
+    font-weight: bold;
+    font-family: "GothamBold";
+    margin-top: 70px;
+}
+#footer-section-prize {
+    margin-top: 77px;
+}
+#footer-section-prize h3 {
+    font-size: 32px;
+    line-height: 65px;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1355px) {
+    #footer-section p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: -15px 20px 0 20px;
+    }
+    #call-me-form {
+        width: 100%;
+        margin: 0;
+    }
+    #call-me-form fieldset {
+        margin: 0 20px;
+        padding: 0;
+    }
+    #call-me-form input {
+        width: 100%;
+        height: 50px;
+        font-size: 24px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    #call-me-form input[name="name"] {
+        width: 100%;
+    }
+    #call-me-form input::placeholder {
+        font-size: 24px;
+    }
+    #call-me-form input::-webkit-input-placeholder {
+        /* Needed for older browsers */
+        font-size: 24px;
+    }
+    #call-me-form input::-moz-placeholder {
+        /* Needed for older Firefox browsers */
+        font-size: 24px;
+    }
+    #call-me-form-cta {
+        margin: 0 20px;
+    }
+    #call-me-form button {
+        width: 100%;
+        height: 120px;
+        font-size: 28px;
+        margin-top: 70px;
+    }
+    #footer-section-prize h3 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+}
