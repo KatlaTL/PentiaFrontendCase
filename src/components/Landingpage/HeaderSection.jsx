@@ -7,8 +7,7 @@ function scrollToNextSection(e) {
     element.scrollIntoView({ behavior: 'smooth', block: 'center'});
 }
 
-export default function LandingPageHeaderSection(props) {
-    
+export default function LandingPageHeaderSection(props) {  
     return (
         <section className="landingpage-section">
             <div id="header-section">

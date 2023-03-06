@@ -127,7 +127,7 @@
 @media only screen and (max-width: 1355px) {
     #header-section {
        padding: 0 20px;
-       margin-top: 80px;
+       margin-top: 65px;
     }
     #header-section > p {
         font-size: 16px;
@@ -225,12 +225,17 @@
     height: 100%;
     overflow: hidden;
 }
-#footer-section p {
+#footer-section .reveal {
+    height: 100%;
+}
+#footer-section .section-p {
     font-size: 32px;
     line-height: 35px;
     margin-top: -25px;
 }
 #call-me-form {
+    position: relative;
+    bottom: 77px;
     width: 60%;
     margin: 150px auto 0;
 }
@@ -303,9 +308,17 @@
     font-weight: bold;
     font-family: "GothamBold";
     margin-top: 70px;
+    cursor: pointer;
+}
+#footer-registration-complete {
+    font-size: 32px;
+    margin-top: 270px;
 }
 #footer-section-prize {
-    margin-top: 77px;
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0;
 }
 #footer-section-prize h3 {
     font-size: 32px;
@@ -315,14 +328,19 @@
 }
 
 @media only screen and (max-width: 1355px) {
-    #footer-section p {
+    #footer-section .section-p {
         font-size: 18px;
         line-height: 1.5;
         margin: -15px 20px 0 20px;
     }
+    #footer-section-form {
+        height: 100%;
+        min-height: 300px;
+    }
     #call-me-form {
         width: 100%;
-        margin: 0;
+        margin: 250px auto 0;
+        bottom: 210px;
     }
     #call-me-form fieldset {
         margin: 0 20px;
@@ -354,9 +372,13 @@
     }
     #call-me-form button {
         width: 100%;
-        height: 120px;
         font-size: 28px;
-        margin-top: 70px;
+    }
+    #footer-registration-complete {
+        margin-top: 100px;
+    }
+    #footer-section-prize {
+        bottom: 0;
     }
     #footer-section-prize h3 {
         font-size: 24px;

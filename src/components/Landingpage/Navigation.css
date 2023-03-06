@@ -19,11 +19,14 @@
     height: auto;
 }
 #landingpage-navigation-expand {
-    position: relative;
+    position: absolute;
     margin: auto;
     top: 50%;
+    left: 0;
+    right: 0;
     cursor: pointer;
     width: 50px;
+    transform: translateY(-50%)
 }
 #landingpage-navigation-expand .expand-line {
     display: block;
@@ -37,7 +40,7 @@
     #landingpage-navigation {
         width: 100%;
         max-width: 100%;
-        height: 80px;
+        height: 65px;
         z-index: 100;
     }
     #landingpage-navigation .svg-container {
@@ -46,7 +49,7 @@
         float: left;
     }
     #landingpage-navigation-expand {
-        top: 40%;
+        top: 50%;
         width: 40px;
     }
     #landingpage-navigation-expand .expand-line:nth-of-type(n+2) {
