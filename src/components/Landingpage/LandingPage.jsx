@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import LandingPageHeaderSection from "./HeaderSection";
 import LandingPageMainSection from "./MainSection";
 import LandingPageFooterSection from "./FooterSection";
-import LandingPageNavigation from "./Navigation";
-import { useEffect } from "react";
+
 
 //js function for scroll animation
 function reveal() {
@@ -30,15 +30,10 @@ export default function LandingPage(props) {
     },[]);
     
     return (
-        <div>
-            <header>
-                <LandingPageNavigation />
-            </header>
-            <main>
-                <LandingPageHeaderSection />
-                <LandingPageMainSection />
-                <LandingPageFooterSection />
-            </main>
-        </div>
+        <main>
+            <LandingPageHeaderSection />
+            <LandingPageMainSection />
+            <LandingPageFooterSection />
+        </main>
     );
 }

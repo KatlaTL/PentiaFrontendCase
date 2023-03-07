@@ -10,7 +10,7 @@
     font-family: "GothamBlack";
     padding-top: 200px;
 }
-@media only screen and (max-width: 1355px) {
+@media only screen and (max-width: 1400px) {
     .landingpage-section {
         width: 100%;
         height: auto;
@@ -21,17 +21,6 @@
         line-height: 1.5;
         padding-top: 50px;
     }
-}
-
-/* Adds the scroll animation */
-.reveal {
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
-}
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
 }
 
 /* Header section */
@@ -124,7 +113,7 @@
     width: 6px;
 }
 
-@media only screen and (max-width: 1355px) {
+@media only screen and (max-width: 1400px) {
     #header-section {
        padding: 0 20px;
        margin-top: 65px;
@@ -191,7 +180,7 @@
     line-height: 40px;
 }
 
-@media only screen and (max-width: 1355px) {
+@media only screen and (max-width: 1400px) {
     #main-section {
         width: 60%;
         padding-bottom: 50px;
@@ -327,7 +316,7 @@
     margin-top: 0;
 }
 
-@media only screen and (max-width: 1355px) {
+@media only screen and (max-width: 1400px) {
     #footer-section .section-p {
         font-size: 18px;
         line-height: 1.5;

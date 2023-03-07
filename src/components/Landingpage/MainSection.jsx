@@ -1,6 +1,6 @@
 import illustration1 from "../../assets/illustration1.svg";
 import illustration2 from "../../assets/illustration2.svg";
-import "./Sections.css";
+import "./Landingpage.css";
 
 export default function LandingPageMainSection(props) {
     return (

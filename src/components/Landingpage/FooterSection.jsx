@@ -1,6 +1,6 @@
 import { useReducer, useState } from "react";
 import prize from "../../assets/prize.svg";
-import "./Sections.css";
+import "./Landingpage.css";
 
 const initialState = {
     //property names have to match the names of the input fields 
@@ -13,20 +13,23 @@ const initialState = {
 
 
 export default function LandingPageFooterSection(props) {
+    //use useState for simpler states such as boolean, number or string
     const [showForm, setShowForm] = useState(true);
+    
+    //use useReducer for more complex state logic such as objects or array
     const [state, dispatch] = useReducer((state, action) => {
         switch(action.type) {
             case "update_value":
                 const { name, value } = action.event.target;
                 return {...state, [name]: value};
-            case "submit_form":
-                //Ideally there should be a database call here to save the form data
+            case "clear_form":
                 let newState = {};
                 for (const key of Object.keys(state)) {
                     newState = {...newState, [key]: ""}
                 }
-                setShowForm(false);
                 return newState;
+            case "reset":
+                return initialState;
             default:
                 return state;
         }
@@ -38,7 +41,11 @@ export default function LandingPageFooterSection(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch({type: "submit_form"});
+        
+        //Ideally the form data should be send to the backend here
+
+        dispatch({type: "reset"});
+        setShowForm(false);
     }
 
 

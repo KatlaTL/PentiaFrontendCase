@@ -1,5 +1,5 @@
 import zeppeliner from "../../assets/zeppeliner.svg"
-import "./Sections.css";
+import "./Landingpage.css";
 
 function scrollToNextSection(e) {
     e.preventDefault()
