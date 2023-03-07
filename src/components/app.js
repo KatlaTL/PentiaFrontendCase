@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./Landingpage/LandingPage";
 import LandingPageNavigation from "./Navigation/Navigation"
+import LandingPageFooter from "./Footer/Footer";
 
 export default function App() {
     return (    
@@ -18,6 +19,10 @@ export default function App() {
                 <Route path="/kontakt" element={ <LandingPage/> } />
                 <Route path="/*" element={ <LandingPage/> } />
             </Routes>
+
+            <footer>
+                <LandingPageFooter />
+            </footer>
         </div>
     );
 }
