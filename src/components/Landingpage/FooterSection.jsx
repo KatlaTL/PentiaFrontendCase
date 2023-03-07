@@ -42,6 +42,13 @@ export default function LandingPageFooterSection(props) {
     const handleSubmit = (e) => {
         e.preventDefault();
         
+        //Check if any of the input fields are empty
+        for (const value of Object.values(state)) {
+            if (!value) {
+                return;
+            }
+        }
+        
         //Ideally the form data should be send to the backend here
 
         dispatch({type: "reset"});
@@ -62,11 +69,11 @@ export default function LandingPageFooterSection(props) {
                             <form id="call-me-form" onSubmit={handleSubmit}>
                                 <fieldset>
                                     <legend>Personal data</legend>
-                                    <input onChange={handleInputChange} value={state.name} type="text" name="name" aria-label="name" placeholder="Navn" />
-                                    <input onChange={handleInputChange} value={state.mobile} type="tel" name="mobile" aria-label="mobile" placeholder="Mobil" />
-                                    <input onChange={handleInputChange} value={state.email} type="email" name="email" aria-label="e-mail" placeholder="e-mail" />
-                                    <input onChange={handleInputChange} value={state.zipcode} type="text" name="zipcode" aria-label="zip code" placeholder="Postnr." />
-                                    <input onChange={handleInputChange} value={state.city} type="text" name="city" aria-label="city" placeholder="By" />
+                                    <input onChange={handleInputChange} value={state.name} type="text" name="name" aria-label="name" placeholder="Navn" required />
+                                    <input onChange={handleInputChange} value={state.mobile} type="tel" name="mobile" aria-label="mobile" placeholder="Mobil" required />
+                                    <input onChange={handleInputChange} value={state.email} type="email" name="email" aria-label="e-mail" placeholder="e-mail" required />
+                                    <input onChange={handleInputChange} value={state.zipcode} type="text" name="zipcode" aria-label="zip code" placeholder="Postnr." required />
+                                    <input onChange={handleInputChange} value={state.city} type="text" name="city" aria-label="city" placeholder="By" required />
                                 </fieldset>
                                 <div id="call-me-form-cta">
                                     <button type="submit">Ring mig op</button>

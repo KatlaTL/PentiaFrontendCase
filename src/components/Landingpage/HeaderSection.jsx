@@ -1,5 +1,6 @@
 import zeppeliner from "../../assets/zeppeliner.svg"
 import "./Landingpage.css";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 
 function scrollToNextSection(e) {
     e.preventDefault()
