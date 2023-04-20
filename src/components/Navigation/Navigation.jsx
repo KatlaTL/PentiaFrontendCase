@@ -6,7 +6,7 @@ import "./Navigation.css";
 export default function LandingPageNavigation(props) {
     const navRef = useRef();
 
-    const handleNavClick = (e) => {
+    const handleNavClick = () => {
         const navClasses = navRef.current.classList;
         navClasses.add("menu-animatable");
         if (!navClasses.contains("menu-visible")) {

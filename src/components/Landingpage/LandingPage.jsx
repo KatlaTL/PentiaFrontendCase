@@ -23,7 +23,7 @@ function reveal() {
 export default function LandingPage(props) {
     //Use the useDocumentTitle custom hook to the set the page title
     useDocumentTitle("Landing Page");
-
+    
     //use UseEffect to add the reveal function to the scroll event after the document is finished rendering
     useEffect(() => {
         document.addEventListener("scroll", reveal);  
