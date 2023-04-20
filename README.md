@@ -1,5 +1,7 @@
 # Pentia frontend case
-Landing page made with react, html and css
+Landing page case made with react, HTML5 and CSS3
+
+Most of the react and redux that has been used it overkill and only done to demonstrate the use of it.
 
 <a href="src/assets/Case Frontend React.pdf">Link to case description</a>
 
